@@ -1,5 +1,5 @@
 @extends('layouts.layout')
 
 @section('content')
-Content goes here.
+    <livewire:simple-component />
 @endSection
