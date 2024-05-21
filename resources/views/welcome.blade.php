@@ -14,7 +14,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+    <body class="bg-gray-500">
     </body>
 
 </html>
