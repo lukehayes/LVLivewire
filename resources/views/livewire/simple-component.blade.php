@@ -1,9 +1,5 @@
-<div class='p-4 bg-gray-300'>
+<div>
     {{-- The Master doesn't talk, he acts. --}}
-    <p>Simple Component Text.</p>
-
-    @foreach($posts as $post)
-        @livewire('post', ['id' => $post->id])
-    @endforeach()
+    <p>Simple Component Text - NO LONGER USED.</p>
 
 </div>
