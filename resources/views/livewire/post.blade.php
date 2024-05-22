@@ -1,5 +1,4 @@
-<div>
+<div class='bg-blue-200 h-40'>
     {{-- Do your work, then step back. --}}
-    <h3>{{ $post->title }}</h3>
-    <span>Post created: {{ $post->created_at }}</span>
+    <h3>Post {{$id}}</h3>
 </div>

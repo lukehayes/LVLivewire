@@ -3,6 +3,7 @@
     <p>Simple Component Text.</p>
 
     @foreach($posts as $post)
-        <p class=''>{{$post->title}}</p>
-    @endforeach($posts as $post)
+        @livewire('post', ['id' => $post->id])
+    @endforeach()
+
 </div>

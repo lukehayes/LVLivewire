@@ -1,5 +1,5 @@
 @extends('layouts.layout')
 
 @section('content')
-    <livewire:simple-component />
+    @livewire('simple-component')
 @endSection
