@@ -14,7 +14,7 @@
         <script type="text/javascript" src="{{asset('tailwind.min.js') }}"></script>
     </head>
 
-    <body class="bg-slate-100">
+    <body class="bg-zinc-200">
         @yield("content")
     </body>
 

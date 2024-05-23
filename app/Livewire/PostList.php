@@ -17,7 +17,7 @@ class PostList extends Component
     {
 
         return <<<'HTML'
-        <div>
+        <div class='container mx-auto'>
 
             <p>Post List: </p>
 
