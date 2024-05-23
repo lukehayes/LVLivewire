@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\LoginController;
 
 //Route::get('/', function () {
     //return view('welcome');
@@ -9,3 +10,5 @@ use App\Http\Controllers\SiteController;
 
 Route::get('/', [SiteController::class, 'index']);
 Route::get('/other', [SiteController::class, 'other']);
+
+Route::get('/login', [LoginController::class, 'index']);
