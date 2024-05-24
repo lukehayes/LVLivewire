@@ -19,7 +19,9 @@ class PostList extends Component
         return <<<'HTML'
         <div class='container mx-auto'>
 
-            <p>Post List: </p>
+            <p class='my-6'>Post List: </p>
+
+            <a href="/login" class='bg-indigo-600 p-3 rounded text-white hover:bg-indigo-700'>Login</a>
 
             @foreach($posts as $post)
                 @livewire('post', ['id' => $post->id])
