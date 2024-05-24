@@ -9,14 +9,14 @@
 
         <div class="mb-4">
 
-            @if (session('email'))
+            @if (session('errors'))
                 <div class="p-2 bg-red-200">
-                    {{ session('email')}}
+                    {{ session('errors')}}
                 </div>
             @endif
 
             <label for="Username" class='block font-bold mb-2 '>Username</label>
-            <input type="text" name='email' placeholder="Username" class='w-full border shadow py-2 px-4'>
+            <input type="text" name='email' placeholder="Email" class='w-full border shadow py-2 px-4'>
         </div>
 
         <div class="mb-4">
