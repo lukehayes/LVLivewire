@@ -8,13 +8,20 @@
         @csrf
 
         <div class="mb-4">
+
+            @if (session('email'))
+                <div class="p-2 bg-red-200">
+                    {{ session('email')}}
+                </div>
+            @endif
+
             <label for="Username" class='block font-bold mb-2 '>Username</label>
             <input type="text" name='email' placeholder="Username" class='w-full border shadow py-2 px-4'>
         </div>
 
         <div class="mb-4">
             <label for="Password" class='block font-bold mb-2'>Password</label>
-            <input type="password" name='password' placeholder="password" class='border shadow w-full py-2 px-4'>
+            <input type="password" name='password' placeholder="Password" class='border shadow w-full py-2 px-4'>
         </div>
 
         <div class="mt-4">
