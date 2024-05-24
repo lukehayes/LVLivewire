@@ -15,11 +15,13 @@ class LoginController extends Controller
 
     public function authenticate(Request $request) : RedirectResponse
     {
+        $request->session()->invalidate();
 
         $credentials = $request->validate([
-            'email' => ['required', 'email'],
+            'email' => ['required'],
             'password' => ['required']
         ]);
+
 
         if(Auth::attempt($credentials))
         {
@@ -28,7 +30,8 @@ class LoginController extends Controller
         }
 
         return back()->withErrors([
-            'username' => 'That username was not recogized.'
+            'email' => 'That email was not recogized.',
+            'password' => 'That password was not incorrect.',
 
         ])->onlyInput('username');
     }
