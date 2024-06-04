@@ -9,11 +9,13 @@
 
         <div class="mb-4">
 
-            @if (session('email'))
-                <div class="p-2 bg-red-200">
-                    {{ session('email')}}
-                </div>
-            @endif
+            @if($errors->any())
+
+                @foreach($errors->all() as $error)
+                    <p class='block bg-red-200 p-4 m-2'> {{$error}} </p>
+                @endforeach()
+
+            @endif()
 
             <label for="Username" class='block font-bold mb-2 '>Username</label>
             <input type="text" name='email' placeholder="Username" class='w-full border shadow py-2 px-4'>
