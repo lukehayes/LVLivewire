@@ -13,3 +13,5 @@ Route::get('/other', [SiteController::class, 'other']);
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authenticate']);
+
+Route::get('/dashboard', "App\Http\Controllers\DashboardController@index");

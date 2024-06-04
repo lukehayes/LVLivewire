@@ -26,13 +26,13 @@ class LoginController extends Controller
         if(Auth::attempt($credentials))
         {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            return redirect()->intended('/dashboard');
         }
 
         return back()->withErrors([
             'email' => 'That email was not recogized.',
-            'password' => 'That password was not incorrect.',
+            'password' => 'That password was incorrect.',
 
-        ])->onlyInput('username');
+        ])->onlyInput('email');
     }
 }
