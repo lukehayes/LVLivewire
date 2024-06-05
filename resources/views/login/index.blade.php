@@ -2,16 +2,16 @@
 
 @section('login-form')
 
-<div class='max-w-xl mx-auto py-8'>
+<div class='flex flex-col items-center justify-center mx-auto'>
 
     <a href="#" class="flex justify-center items-center dark:text-white my-10">
         <img class="w-16 h-16 mr-2 text-red" src="https://img.icons8.com/?size=100&id=33605&format=png&color=000000 alt="logo">
     </a>
 
-    <form action="/login" method="POST" class='bg-white p-10'>
+    <form action="/login" method="POST" class='bg-white p-10 md:w-96'>
 
         <div class="p-6 space-y-2 md:space-y-6 sm:p-8">
-            <h3 class="text-xl font-bold leading-tight tracking-tight text-gray-900">
+            <h3 class="font-bold leading-tight tracking-tight text-gray-900">
                 Sign in to your account
             </h3>
         </div>
