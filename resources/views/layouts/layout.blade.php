@@ -15,6 +15,11 @@
     </head>
 
     <body class="bg-zinc-200">
+
+        <nav class='container mx-auto py-4'>
+            <a href="{{ url('login') }}" class='bg-indigo-500 text-white p-2 rounded'>Login</a>
+        </nav>
+
         @yield("content")
     </body>
 
